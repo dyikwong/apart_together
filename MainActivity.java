@@ -11,16 +11,11 @@ import android.widget.PopupWindow;
 import android.app.Activity;
 import android.content.Context;
 import android.widget.Button;
-import android.app.Activity;
-import android.content.Context;
 import android.os.Build;
-import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.view.ViewGroup.LayoutParams;
 
