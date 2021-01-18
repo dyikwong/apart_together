@@ -29,7 +29,7 @@ public class Update extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        /*FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference myRef = database.getReference("message");
         final DatabaseReference myRef2 = database.getReference("body");
         final DatabaseReference emojiRef = database.getReference("emoji");
@@ -72,6 +72,7 @@ public class Update extends Fragment {
                 emojiRef.setValue("scared");
             }
         });
+*/
         view.findViewById(R.id.submit_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -79,7 +80,7 @@ public class Update extends Fragment {
                         .navigate(R.id.action_update_to_page);
             }
         });
-        view.findViewById(R.id.submit_button).setOnClickListener(new View.OnClickListener() {
+        /*view.findViewById(R.id.submit_button).setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
@@ -90,6 +91,6 @@ public class Update extends Fragment {
                 text.setText("");
                 body.setText("");
             }
-        });
+        });*/
     }
 }
