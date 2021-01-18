@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">apart, together</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello World</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="start_label">Start</string>
+    <string name="home_page_lbl">Home</string>
+    <string name="calendar_page_lbl">Calendar</string>
+    <string name="messages_page_lbl">Messages</string>
+    <string name="view_events_lbl">View Events</string>
+    <string name="page_lbl">Profile</string>
+    <string name="update_lbl">Update</string>
+
+
+    <!--in start.xml-->
+    <string name="title_txt">apart, together</string>
+
+    <!--in home.xml-->
+    <string name="pinned_txt">Pinned messages or announcements</string>
+
+    <string name="img_1_lbl">Mom</string>
+    <string name="img_2_lbl">Sister</string>
+    <string name="img_3_lbl">Brother</string>
+    <string name="img_4_lbl">Uncle</string>
+    <string name="img_5_lbl">Aunt</string>
+    <string name="img_6_lbl">Dad</string>
+    <string name="img_7_lbl"></string>
+    <string name="img_8_lbl"></string>
+    <string name="img_9_lbl"></string>
+
+    <!--in page.xml-->
+    <string name="update_txt">Update</string>
+    <string name="feeling_lbl">Feeling</string>
+    <string name="status_lbl">Status</string>
+    <string name="steps_lbl">Steps</string>
+    <string name="covid_lbl">Latest COVID test</string>
+
+    <!--in update.xml-->
+    <string name="submit_txt">Submit</string>
+
+</resources>
