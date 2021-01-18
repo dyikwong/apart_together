@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Start">
+    <!--app:startDestination="@id/FirstFragment">-->
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.android.example.apart_together.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.android.example.apart_together.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Start"
+        android:name="com.android.example.apart_together.Start"
+        android:label="@string/start_label"
+        tools:layout="@layout/start">
+
+        <action
+            android:id="@+id/action_start_to_home"
+            app:destination="@id/Home" />
+        <action
+            android:id="@+id/action_start_to_calendar"
+            app:destination="@id/CalendarPage" />
+        <action
+            android:id="@+id/action_start_to_messages"
+            app:destination="@id/Messages" />
+    </fragment>
+    <fragment
+    android:id="@+id/Home"
+    android:name="com.android.example.apart_together.Home"
+    android:label="@string/home_page_lbl"
+    tools:layout="@layout/home">
+
+        <action
+            android:id="@+id/action_home_to_start"
+            app:destination="@id/Start" />
+        <action
+            android:id="@+id/action_home_to_page"
+            app:destination="@id/Page" />
+    </fragment>
+    <fragment
+        android:id="@+id/CalendarPage"
+        android:name="com.android.example.apart_together.CalendarPage"
+        android:label="@string/calendar_page_lbl"
+        tools:layout="@layout/calendar">
+
+        <action
+            android:id="@+id/action_calendar_to_home"
+            app:destination="@id/Start" />
+        <action
+            android:id="@+id/action_calendar_to_event"
+            app:destination="@id/Event" />
+    </fragment>
+    <fragment
+        android:id="@+id/Messages"
+        android:name="com.android.example.apart_together.Messages"
+        android:label="@string/messages_page_lbl"
+        tools:layout="@layout/messages">
+
+        <action
+            android:id="@+id/action_messages_to_home"
+            app:destination="@id/Start" />
+    </fragment>
+    <fragment
+        android:id="@+id/Event"
+        android:name="com.android.example.apart_together.CalendarLayout"
+        android:label="@string/view_events_lbl"
+        tools:layout="@layout/calendar_layout">
+
+        <action
+            android:id="@+id/action_event_to_calendar"
+            app:destination="@id/CalendarPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/Page"
+        android:name="com.android.example.apart_together.Page"
+        android:label="@string/page_lbl"
+        tools:layout="@layout/page">
+
+        <action
+            android:id="@+id/action_page_to_home"
+            app:destination="@id/Home" />
+        <action
+            android:id="@+id/action_page_to_message"
+            app:destination="@id/Messages" />
+        <action
+            android:id="@+id/action_page_to_update"
+            app:destination="@id/Update" />
+    </fragment>
+    <fragment
+        android:id="@+id/Update"
+        android:name="com.android.example.apart_together.Update"
+        android:label="@string/update_lbl"
+        tools:layout="@layout/update">
+
+        <action
+            android:id="@+id/action_update_to_page"
+            app:destination="@id/Page" />
+    </fragment>
+
+
+
+
+</navigation>
